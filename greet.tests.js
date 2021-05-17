@@ -52,7 +52,7 @@ describe('The Greetings Function', function () {
             greeting.addNames("Jodie", "English");
             greeting.addNames("Paul", "Afrikaans");
             greeting.addNames("Amy", "isiXhosa");
-            assert.equal(greeting.returnNames(), ['JODIE', 'PAUL', 'AMY']);
+            assert.deepEqual(greeting.returnNames(), ['JODIE', 'PAUL', 'AMY']);
         });
 
         it('should test that the counter does not greet "Jodie" and "Paul" twice', function () {
